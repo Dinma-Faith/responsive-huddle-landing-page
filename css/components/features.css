@@ -1,0 +1,49 @@
+.features {
+    flex-direction: column;
+    margin-top: 46px;
+
+    text-align: center;
+}
+
+.feature {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  margin-top: 46px;
+  padding-block: 50px;
+
+}
+
+.feature-text h2 {
+    font-size: 20px;
+}
+
+.feature-text p {
+    color: var(--very-dark-cyan);
+    padding-inline: 10px;
+    font-size: 15px;
+    
+}
+
+/* .footer img, */
+.feature img {
+    
+        display: block;
+        width: 100%;
+        height: auto;
+        max-width: 15rem;
+        margin-inline: auto;
+}
+
+.overlap-cta {
+    background-color: white;
+    text-align: center;
+    padding: 0.625rem 0.625rem;
+    border-radius: 2rem;
+    box-shadow: 0 0.75rem 2rem rgba(0, 0, 0, 0.1);
+    /* width: 90%; */
+    /* max-width: 600px; */
+    /* margin: 0 auto; */
+    position: relative;
+    top: 5rem;
+    z-index: 2;
+    font-size: 10px;
+}

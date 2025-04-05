@@ -1,54 +1,57 @@
 :root {
-    /* colors*/
-    --purple-pink: hsl(322, 100%, 66%);
-    --very-pale-cyan: hsl(192, 100%, 9%);
-    --very-dark-cyan: hsl(208, 11%, 55%);
-    --very-grayish-blue: hsl(208, 11%, 55%);
+  /* colors*/
+  --purple-pink: hsl(322, 100%, 66%);
+  --very-pale-cyan: hsl(192, 100%, 9%);
+  --very-dark-cyan: hsl(208, 11%, 55%);
+  --very-grayish-blue: hsl(209, 11%, 55%);
 
-    --font-heading: 'Poppins', serif;
-    --font-body-and-btn: 'Open Sans', sans-serif;
+  --font-heading: "Poppins", serif;
+  --font-body-and-btn: "Open Sans", sans-serif;
 }
 
 /* Global styles */
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
-
+  box-sizing: border-box;
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    font-family: var(--font-body-and-btn);
-    line-height: 1.6;
-    background-color: var(--white);
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-body-and-btn);
+  line-height: 1.6;
+  background-color: #fff;
 }
 
-h1 {
-    font-family: var(--font-heading);
+.container {
+  width: 100%;
+  padding: 20px;
 }
 
-img {
-    display: block;
-    max-width: 100%;
-    height: auto;
+h1,
+h2,
+.hero-text {
+  color: var(--very-pale-cyan);
+}
+
+/* h1, */
+h2 {
+  /* font-family: var(--font-heading); */
+  font-family: "Atlassian Sans";
+}
+
+p {
+  font-family: var(--font-body-and-btn);
 }
 
 a {
-    text-decoration: none;
-    cursor: pointer;
+  text-decoration: none;
+  cursor: pointer;
 }
 
-/* /**
-.cta-button {
-    background: white;
-    color: var(--purple-pink);
-    border: 1px solid hsl(322, 100%, 66%);
-    border-radius: 2rem;
-    padding: 0.5rem 1.5rem;
-    font-weight: 700;
-    font-size: 0.9rem;
-    transition: all 0.3s ease;
-  }
-   */
+button {
+  border: none;
+  border-radius: 2rem;
+
+}

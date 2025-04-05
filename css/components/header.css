@@ -1,13 +1,62 @@
-.nav {
+nav {
   display: flex;
-  /* justify-content: space-between;
-  align-items: center; */
-  /* margin-bottom: 3rem; */
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 20px;
+  margin-bottom: 45px;
 }
 
-nav .logo img {
-    height: 1rem;
-    width: auto;
-  }
+.logo img {
+  height: 1rem;
+  width: auto;
+}
 
-  
+.hero-image img { 
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 15rem;
+  margin-inline: auto;
+}
+
+.nav-button {
+  background: white;
+  color: var(--very-pale-cyan);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 0.5rem 1.5rem;
+  font-weight: 700;
+  font-size: 0.6875rem;
+  transition: all 0.3s ease;
+}
+
+header {
+  background-size: cover;
+  padding-bottom: 60px;
+  background: url(/images/bg-hero-mobile.svg) center center / contain no-repeat;
+  background-color: var(very-grayish-blue);
+}
+
+h1 {
+  font-size: x-large;
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 2rem;
+}
+
+.cta-button {
+  background-color: var(--purple-pink);
+  color: #fff;
+  padding: 0.60rem 3.95rem;
+  margin: 0.625rem;
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease; 
+}
+
+.cta-button:hover {
+  transform: scale(1.1);
+}
