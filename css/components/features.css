@@ -1,7 +1,6 @@
 .features {
     flex-direction: column;
     margin-top: 46px;
-
     text-align: center;
 }
 
@@ -37,7 +36,7 @@
     background-color: white;
     text-align: center;
     padding: 0.625rem 0.625rem;
-    border-radius: 2rem;
+    border-radius: 1rem;
     box-shadow: 0 0.75rem 2rem rgba(0, 0, 0, 0.1);
     /* width: 90%; */
     /* max-width: 600px; */
@@ -47,3 +46,97 @@
     z-index: 2;
     font-size: 10px;
 }
+
+.overlap-button {
+    background-color: var(--purple-pink);
+    color: #fff;
+    padding: 0.6rem 3.95rem;
+    margin: 0.625rem;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .overlap-button:hover {
+    transform: scale(1.1);
+  }
+
+  .overlap-cta h2 {
+    font-size: 12px;
+  }
+
+/* ===== LARGER SCREENS (768px and up) ===== */
+@media (min-width: 768px) {
+    .features {
+      max-width: 1200px;
+      margin: 5rem auto;
+      padding: 0 2rem;
+    }
+  
+    .feature {
+      display: flex;
+      align-items: center;
+      gap: 4rem;
+      padding: 4rem;
+      margin-top: 2rem;
+      text-align: left;
+      border-radius: 1rem;
+    }
+  
+    /* Alternate layout for even-numbered features */
+    .feature:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+  
+    .feature img {
+      max-width: 12rem;
+      flex: 1;
+    }
+  
+    .feature-text {
+      flex: 1;
+    }
+  
+    .feature-text h2 {
+      font-size: 1.5rem;
+    }
+  
+    .feature-text p {
+      font-size: 0.8rem;
+      padding-inline: 0;
+      line-height: 1.6;
+    }
+  
+    .overlap-cta {
+      max-width: 30rem;
+      margin: 0 auto;
+      padding: 3rem 2rem;
+      top: 5rem;
+      font-size: 1rem;
+    }
+
+    .overlap-cta h2 {
+        font-size: 20px;
+      }
+  }
+  
+  /* ===== EXTRA LARGE SCREENS (1200px and up) ===== */
+  /* @media (min-width: 1200px) {
+    .feature {
+      gap: 6rem;
+      padding: 5rem;
+    }
+  
+    .feature img {
+      max-width: 30rem;
+    }
+  
+    .feature-text h2 {
+      font-size: 2.5rem;
+    }
+  
+    .feature-text p {
+      font-size: 1.2rem;
+      max-width: 90%;
+    }
+  } */
