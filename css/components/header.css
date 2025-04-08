@@ -4,6 +4,7 @@
   align-items: center;
   padding-block: 20px;
   margin-bottom: 45px;
+  max-width: 1200px;
 }
 
 .nav-button {
@@ -33,7 +34,6 @@ header {
   width: 100%;
   height: auto;
 }
-
 
 h1 {
   font-size: 1.5rem;
@@ -88,9 +88,6 @@ h1 {
 
   .hero-image {
     flex-basis: 60%;
-  }
-
-  .hero-image img {
     height: 80%;
   }
 
