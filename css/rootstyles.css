@@ -1,12 +1,12 @@
 :root {
   /* colors*/
   --purple-pink: hsl(322, 100%, 66%);
-  --very-pale-cyan: hsl(192, 100%, 9%);
-  --very-dark-cyan: hsl(208, 11%, 55%);
-  --very-grayish-blue: hsl(209, 11%, 55%);
+  --very-dark-cyan: hsl(192, 100%, 9%);
+  --very-pale-cyan: hsl(193, 100%, 96%);
+  --very-grayish-blue: hsl(208, 11%, 55%);
 
-  --font-heading: "Poppins", serif;
-  --font-body-and-btn: "Open Sans", sans-serif;
+  --font-heading: "Poppins";
+  --font-body-and-btn: "Open Sans";
 }
 
 /* Global styles */
@@ -21,24 +21,23 @@ body {
   padding: 0;
   font-family: var(--font-body-and-btn);
   line-height: 1.6;
-  background-color: #fff;
+  /* background-color: #fff; */
 }
 
-.container {
+/* .container {
   width: 100%;
   padding: 20px;
-}
+} */
 
 h1,
 h2,
 .hero-text {
-  color: var(--very-pale-cyan);
+  color: var(--very-dark-cyan);
 }
 
-/* h1, */
+h1,
 h2 {
-  /* font-family: var(--font-heading); */
-  font-family: "Atlassian Sans";
+  font-family: var(--font-heading);
 }
 
 p {

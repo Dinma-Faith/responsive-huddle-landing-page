@@ -1,127 +1,124 @@
 .features {
-    flex-direction: column;
-    margin-top: 46px;
-    text-align: center;
+  flex-direction: column;
+  margin-top: 46px;
+  text-align: center;
 }
 
 .feature {
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   margin-top: 46px;
   padding-block: 50px;
-
 }
 
 .feature-text h2 {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 .feature-text p {
-    color: var(--very-dark-cyan);
-    padding-inline: 10px;
-    font-size: 15px;
-    
+  color: var(--very-dark-cyan);
+  padding-inline: 10px;
+  font-size: 15px;
 }
 
 /* .footer img, */
 .feature img {
-    
-        display: block;
-        width: 100%;
-        height: auto;
-        max-width: 15rem;
-        margin-inline: auto;
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 15rem;
+  margin-inline: auto;
 }
 
 .overlap-cta {
-    background-color: white;
-    text-align: center;
-    padding: 0.625rem 0.625rem;
-    border-radius: 1rem;
-    box-shadow: 0 0.75rem 2rem rgba(0, 0, 0, 0.1);
-    /* width: 90%; */
-    /* max-width: 600px; */
-    /* margin: 0 auto; */
-    position: relative;
-    top: 5rem;
-    z-index: 2;
-    font-size: 10px;
+  background-color: #fff;
+  text-align: center;
+  padding: 0.625rem 0.625rem;
+  border-radius: 1rem;
+  box-shadow: 0 0.75rem 2rem rgba(0, 0, 0, 0.1);
+  /* width: 90%; */
+  /* max-width: 600px; */
+  /* margin: 0 auto; */
+  position: relative;
+  top: 5rem;
+  z-index: 2;
+  font-size: 10px;
 }
 
 .overlap-button {
-    background-color: var(--purple-pink);
-    color: #fff;
-    padding: 0.6rem 3.95rem;
-    margin: 0.625rem;
-    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-    transition: transform 0.3s ease, background-color 0.3s ease;
-  }
-  
-  .overlap-button:hover {
-    transform: scale(1.1);
-  }
+  background-color: var(--purple-pink);
+  color: #fff;
+  padding: 0.6rem 3.95rem;
+  margin: 0.625rem;
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
 
-  .overlap-cta h2 {
-    font-size: 12px;
-  }
+.overlap-button:hover {
+  transform: scale(1.1);
+}
+
+.overlap-cta h2 {
+  font-size: 12px;
+}
 
 /* ===== LARGER SCREENS (768px and up) ===== */
 @media (min-width: 768px) {
-    .features {
-      max-width: 1200px;
-      margin: 5rem auto;
-      padding: 0 2rem;
-    }
-  
-    .feature {
-      display: flex;
-      align-items: center;
-      gap: 4rem;
-      padding: 4rem;
-      margin-top: 2rem;
-      text-align: left;
-      border-radius: 1rem;
-    }
-  
-    /* Alternate layout for even-numbered features */
-    .feature:nth-child(even) {
-      flex-direction: row-reverse;
-    }
-  
-    .feature img {
-      max-width: 12rem;
-      flex: 1;
-    }
-  
-    .feature-text {
-      flex: 1;
-    }
-  
-    .feature-text h2 {
-      font-size: 1.5rem;
-    }
-  
-    .feature-text p {
-      font-size: 0.8rem;
-      padding-inline: 0;
-      line-height: 1.6;
-    }
-  
-    .overlap-cta {
-      max-width: 30rem;
-      margin: 0 auto;
-      padding: 3rem 2rem;
-      top: 5rem;
-      font-size: 1rem;
-    }
-
-    .overlap-cta h2 {
-        font-size: 20px;
-      }
+  .features {
+    max-width: 1200px;
+    margin: 5rem auto;
+    padding: 0 2rem;
   }
-  
-  /* ===== EXTRA LARGE SCREENS (1200px and up) ===== */
-  /* @media (min-width: 1200px) {
+
+  .feature {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    padding: 4rem;
+    margin-top: 2rem;
+    text-align: left;
+    border-radius: 1rem;
+  }
+
+  /* Alternate layout for even-numbered features */
+  .feature:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+
+  .feature img {
+    max-width: 12rem;
+    flex: 1;
+  }
+
+  .feature-text {
+    flex: 1;
+  }
+
+  .feature-text h2 {
+    font-size: 1.5rem;
+  }
+
+  .feature-text p {
+    font-size: 0.8rem;
+    padding-inline: 0;
+    line-height: 1.6;
+  }
+
+  .overlap-cta {
+    max-width: 30rem;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+    top: 5rem;
+    font-size: 1rem;
+  }
+
+  .overlap-cta h2 {
+    font-size: 20px;
+  }
+}
+
+/* ===== EXTRA LARGE SCREENS (1200px and up) ===== */
+/* @media (min-width: 1200px) {
     .feature {
       gap: 6rem;
       padding: 5rem;

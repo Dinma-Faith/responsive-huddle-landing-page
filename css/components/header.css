@@ -20,8 +20,8 @@
 }
 
 .nav-button {
-  background: white;
-  color: var(--very-pale-cyan);
+  background: #fff;
+  color: var(--very-dark-cyan);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   padding: 0.5rem 1.5rem;
   font-weight: 700;
