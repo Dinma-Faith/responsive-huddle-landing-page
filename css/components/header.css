@@ -78,12 +78,11 @@ h1 {
     flex-direction: row;
     text-align: left;
     max-width: 1200px;
-    margin: auto 0 2rem 0;;
+    margin: auto 0 ;
   }
 
   .hero-text {
     flex: 1;
-    /* padding-right: 2rem; */
   }
 
   .hero-image {

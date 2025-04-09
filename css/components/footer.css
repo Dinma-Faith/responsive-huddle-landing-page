@@ -1,12 +1,12 @@
 .site-footer {
   background-color: var(--very-dark-cyan);
-  color: #fff;
+  color: var(--very-pale-cyan);
   padding-top: 6.25rem;
   padding-inline: 16px;
-  font-family: "Open Sans", sans-serif;
   line-height: 1.6;
-
-  /* position: relative; */
+  font-family: var(--font-body-and-btn);
+  font-size: 13px;
+  font-weight: 400;
 }
 
 .footer-logo path {
@@ -21,19 +21,30 @@
 }
 
 .footer-logo svg {
-  margin-bottom: 1.5rem;
+  width: clamp(120px, 15vw, 180px);
+  margin-block: 2rem;
+  width: 120px;
+  height: auto;
+}
+
+.footer-logo {
+  display: inline-block;
+  width: fit-content;
 }
 
 .contact-item {
   display: flex;
-  gap: 1.5rem;
+  gap: 1rem;
   margin-bottom: 1rem;
   align-items: flex-start;
 }
 
 .contact-icon {
   margin-top: 0.25rem;
-  min-width: 18px;
+  width: 10px;
+  height: 10px;
+  margin-top: 0.25rem;
+  flex-shrink: 0;
 }
 
 .contact-item p {
@@ -56,11 +67,11 @@
 }
 
 .footer-links a {
-  color: #fff;
   text-decoration: none;
-  font-weight: 600;
-  font-size: 1.05rem;
+  font-weight: 400;
+  font-size: 1rem;
   transition: color 0.3s ease;
+  color: var(--very-pale-cyan);
 }
 
 .footer-links a:hover {
@@ -69,8 +80,8 @@
 
 .social-links {
   display: flex;
-  gap: 1.25rem;
-  margin-bottom: 2rem;
+  gap: 1rem;
+  margin-bottom: 1rem;
   justify-content: center;
 }
 
@@ -99,9 +110,9 @@
   text-align: center;
   font-size: 0.8rem;
   opacity: 0.8;
+  margin-bottom: 1rem;
 }
 
-/* ===== TABLET (768px and up) ===== */
 @media (min-width: 768px) {
   .site-footer {
     position: relative;
@@ -109,13 +120,16 @@
   }
 
   .footer-container {
-    grid-template-columns: 2fr 1fr 1fr;
-    gap: 2rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 8rem;
     text-align: left;
+    max-width: 1200px;
+    width: 100%;
   }
 
   .footer-logo svg {
-    margin-bottom: 1.5rem;
+    margin-block: 2.5rem;
+    width: 160px;
   }
 
   .contact-item {
@@ -123,11 +137,15 @@
     gap: 1.5rem;
   }
 
+  .contact-icon {
+    width: 12px;
+    height: 12px;
+  }
+
   .footer-nav {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 1rem;
-    padding-top: 4.5rem;
+    gap: 3rem;
   }
 
   .footer-links {
@@ -139,8 +157,6 @@
   .social-links {
     justify-content: flex-start;
     margin-bottom: 2.5rem;
-    margin-top: 0.5rem;
-    padding-top: 10px;
   }
 
   .footer-links a,
@@ -157,9 +173,8 @@
     position: absolute;
     bottom: 2rem;
     left: 0;
-    right: 2rem;
+    right: 4rem;
     text-align: right;
     padding-left: 5rem;
   }
 }
-

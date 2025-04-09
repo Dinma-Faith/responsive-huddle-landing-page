@@ -7,12 +7,11 @@
 
 .feature {
   display: flex;
-  flex-direction: column-reverse ;
+  flex-direction: column-reverse;
   margin-top: 46px;
   padding: 50px 0 50px 0;
-  /* padding: 4rem 1rem 4rem 4rem; */
   box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
-  margin-inline: 29px;
+  margin-inline: 12px;
 }
 
 .feature-text {
@@ -35,7 +34,6 @@
   display: flex;
   align-items: center;
   margin-inline: auto;
-
 }
 .feature img {
   width: 100%;
@@ -43,24 +41,23 @@
 }
 
 .overlap-cta {
-  max-width: 300px;
   background-color: #fff;
   text-align: center;
-  padding: 0.625rem 0.625rem;
+  padding: 2rem 0.625rem;
   border-radius: 1rem;
-  box-shadow: 0 0.75rem 2rem rgba(0, 0, 0, 0.1);
-  width: 100%;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  width: 90%;
   margin: 0 auto;
   position: relative;
   top: 5rem;
   z-index: 2;
-  font-size: 10px;
 }
 
 .overlap-button {
   background-color: var(--purple-pink);
   color: #fff;
-  padding: 0.6rem 3.95rem;
+  padding: 0.6rem 1.5rem;
   margin: 0.625rem;
   box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
   cursor: pointer;
@@ -72,24 +69,38 @@
 }
 
 .overlap-cta h2 {
-  font-size: 12px;
+  font-size: 1rem;
+}
+
+@media (min-width: 500px) {
+  .overlap-cta {
+    max-width: 30rem;
+    padding: 3rem 2rem;
+    top: 5rem;
+    font-size: 1rem;
+  }
+
+  .overlap-cta h2 {
+    font-size: 20px;
+  }
 }
 
 @media (min-width: 768px) {
   .feature-wrapper {
     max-width: 1200px;
-    margin: 5rem auto;
-    padding: 0 2rem;
-}
+    margin: 0 auto;
+    /* padding: 0 2rem; */
+  }
 
   .feature {
     flex-direction: row;
     gap: 4rem;
-    margin-top: 2rem;
+    /* margin-top: 2rem; */
     text-align: left;
     border-radius: 1rem;
     padding: 2rem 1rem 2rem 4rem;
-
+    width: 90%;
+    margin-inline: auto;
   }
 
   .feature:nth-child(even) {
@@ -111,7 +122,6 @@
     flex-basis: 50%;
   }
 
-  
   .feature-text p {
     padding-inline: 0;
     line-height: 1.6;
