@@ -27,7 +27,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution URL here](https://github.com/Dinma-Faith/responsive-huddle-landing-page/tree/develop)
+- [Solution URL](https://github.com/Dinma-Faith/responsive-huddle-landing-page/tree/develop)
+- [Live Link](https://dinma-faith.github.io/responsive-huddle-landing-page/)
 
 ### What I Learned
 
